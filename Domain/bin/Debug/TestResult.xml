@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\VenkatAr\Visual Studio 2012\Projects\Domain\Domain\bin\Debug\Domain.dll" total="8" errors="1" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2017-01-31" time="00:14:56">
+  <environment nunit-version="2.6.4.14350" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\git\CEP\PegaAutomation\17-01-2017\cep.pega.automation\NUnit-2.6.4\NUnit-2.6.4\bin" machine-name="L65025111" user="VenkatAr" user-domain="AU" />
+  <culture-info current-culture="en-AU" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\VenkatAr\Visual Studio 2012\Projects\Domain\Domain\bin\Debug\Domain.dll" executed="True" result="Failure" success="False" time="71.647" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Domain" executed="True" result="Failure" success="False" time="71.646" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="71.646" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="ClickTabsFeature" description="ClickTabs" executed="True" result="Failure" success="False" time="71.645" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="ClickAndVerifySuccessfulLoadingForTabs_" description="Click and verify successful loading for tabs." executed="True" result="Failure" success="False" time="71.644" asserts="0">
+                    <categories>
+                      <category name="DomainTestCases" />
+                    </categories>
+                    <results>
+                      <test-case name="Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(&quot;3&quot;,&quot;TC_003&quot;,&quot;New Homes&quot;,&quot;New Homes | Home &amp; Land Packages | Off the Plan Apartments&quot;,System.String[])" executed="True" result="Success" success="True" time="11.076" asserts="2" />
+                      <test-case name="Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(&quot;4&quot;,&quot;TC_004&quot;,&quot;Sold&quot;,&quot;Sold Houses, Apartments, Units, Flats and New Developments | Real Estate | Domain&quot;,System.String[])" executed="True" result="Success" success="True" time="11.344" asserts="2" />
+                      <test-case name="Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(&quot;5&quot;,&quot;TC_005&quot;,&quot;News&quot;,&quot;News \x2013 Domain&quot;,System.String[])" executed="True" result="Success" success="True" time="13.104" asserts="2" />
+                      <test-case name="Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(&quot;6&quot;,&quot;TC_006&quot;,&quot;Advice&quot;,&quot;Advice \x2013 Domain&quot;,System.String[])" executed="True" result="Success" success="True" time="10.135" asserts="2" />
+                      <test-case name="Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(&quot;7&quot;,&quot;TC_007&quot;,&quot;Agents&quot;,&quot;Search for real estate agents to sell your property in Australia&quot;,System.String[])" executed="True" result="Success" success="True" time="6.756" asserts="2" />
+                      <test-case name="Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(&quot;8&quot;,&quot;TC_008&quot;,&quot;Commercial&quot;,&quot;Commercial Real Estate and Property For Sale and Lease in Australia | CommercialRealEstate.com.au&quot;,System.String[])" executed="True" result="Success" success="True" time="14.509" asserts="2" />
+                      <test-case name="Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(&quot;1&quot;,&quot;TC_001&quot;,&quot;Buy&quot;,&quot;Buy1 Houses, Apartments, Units, Flats and New Developments | Real Estate | Domain&quot;,System.String[])" executed="True" result="Error" success="False" time="4.631" asserts="2">
+                        <failure>
+                          <message><![CDATA[System.FormatException : Index (zero based) must be greater than or equal to zero and less than the size of the argument list.]]></message>
+                          <stack-trace><![CDATA[at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+at System.String.Format(String format, Object[] args)
+at NUnit.Framework.TextMessageWriter.WriteMessageLine(Int32 level, String message, Object[] args)
+at NUnit.Framework.TextMessageWriter..ctor(String userMessage, Object[] args)
+at Domain.StepDefinitions.HomePageSteps.ThenThePageShouldBeSuccessfullyLoadedWithTitle_(String expectedPageTitle) in c:\Users\VenkatAr\Visual Studio 2012\Projects\Domain\Domain\StepDefinitions\HomePageSteps.cs:line 47
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at Domain.Tests.ClickTabsFeature.ScenarioCleanup() in c:\Users\VenkatAr\Visual Studio 2012\Projects\Domain\Domain\Tests\ClickTabs.feature.cs:line 0
+at Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(String id, String testCaseName, String tab_Name, String title, String[] exampleTags) in c:\Users\VenkatAr\Visual Studio 2012\Projects\Domain\Domain\Tests\ClickTabs.feature:line 8
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(&quot;2&quot;,&quot;TC_002&quot;,&quot;Rent&quot;,&quot;Rent Houses, Apartments, Units, Flats and New Developments | Real Estate | Domain&quot;,System.String[])" executed="True" result="Failure" success="False" time="0.012" asserts="1">
+                        <failure>
+                          <message><![CDATA[  ChromeDriver is not in homepage
+  Expected: True
+  But was:  False
+]]></message>
+                          <stack-trace><![CDATA[at Domain.StepDefinitions.HomePageSteps.GivenOpenTheHomePageInChromeBowser_() in c:\Users\VenkatAr\Visual Studio 2012\Projects\Domain\Domain\StepDefinitions\HomePageSteps.cs:line 22
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at Domain.Tests.ClickTabsFeature.ScenarioCleanup() in c:\Users\VenkatAr\Visual Studio 2012\Projects\Domain\Domain\Tests\ClickTabs.feature.cs:line 0
+at Domain.Tests.ClickTabsFeature.ClickAndVerifySuccessfulLoadingForTabs_(String id, String testCaseName, String tab_Name, String title, String[] exampleTags) in c:\Users\VenkatAr\Visual Studio 2012\Projects\Domain\Domain\Tests\ClickTabs.feature:line 8
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
